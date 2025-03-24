@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Tiwari</title>
+    <style>
+        /* Background: Blue-Purple Gradient */
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
 
+        /* Heading with Neon Glow */
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 0px 20px rgba(0, 114, 255, 0.8);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 1.5em;
+            margin: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #2575fc, #6a11cb);
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(106, 17, 203, 0.8);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0px 0px 10px rgba(0, 198, 255, 0.6); }
+            to { text-shadow: 0px 0px 20px rgba(0, 114, 255, 0.9); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Tushar's Webpage</h1>
+    <p>I am a Master's student at IIT-Jodhpur</p>
+    <p>Welcome to my personal webpage!</p>
+    <a href="https://www.iitj.ac.in/" class="btn">Visit IIT Jodhpur</a>
+</body>
+</html>
